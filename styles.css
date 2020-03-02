@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+body {
+	background: linear-gradient(to right, white, brown);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 50px;
+	height: 100vh;
+}
+
+
+.wrapper {
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding-bottom: 150px;
+	padding-top: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border: 2px solid black;
+	border-radius: 20%;
+
+}
+
+
+
+.clock-container1 {
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	min-width: 400px;
+	max-width: 400px; 
+	justify-content: center;
+	align-content: center;
+	margin-right: 20px;
+
+
+}
+
+
+.clock-container2 {
+	margin-left: 20px;
+	width: 160px;
+}
+
+
+.clockh, .clockc, .clockm, .clocks {
+	display: flex;
+	color: white;
+	font-size: 8rem;
+	font-family: 'Open Sans';
+	padding: 10px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	border-left: 3px solid black;
+	justify-content: center;
+
+
+}
+
+
+.clockh {
+	color: white;
+}
+
+.clockm {
+	color: white;
+	border-right: solid black 3px;
+}
+
+
+.clocks {
+	background-color: white;
+	color: pink;
+	border-right: solid black 3px;
+}
+
+
+
+@media(max-width: 700px) {
+	.wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		justify-content: center;
+
+	}
+
+
+
+	.clock-container1 {
+		min-width: 80vw;
+		max-width: 80vw;
+		margin-right: 0px;
+
+	}
+
+	.clock-container2 {
+		margin-left: 0px;
+		width: 80vw;
+		padding-left: auto;
+		padding-right: auto;
+
+
+	}
+
+
+	.clocks {
+		display: flex;
+		justify-content: center;
+	}
+
+
+}
