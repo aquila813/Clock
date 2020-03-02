@@ -15,7 +15,7 @@ body {
 }
 
 
-.wrapper {
+.interface {
 	background-color: grey;
 	display: flex;
 	justify-content: center;
@@ -26,94 +26,134 @@ body {
 	padding-right: 40px;
 	border: 2px solid black;
 	border-radius: 20%;
+	box-shadow: 5px 10px 5px 10px;
+
 
 }
 
 
 
-.clock-container1 {
+.screen-1 {
 	background-color: rgba(0, 0, 0, 0.8);
 	display: flex;
 	min-width: 400px;
 	max-width: 400px; 
 	justify-content: center;
 	align-content: center;
-	margin-right: 20px;
+	margin-right: 10px;
+	border-top-left-radius: 25%;
+	
 
 
 }
 
 
-.clock-container2 {
+.screen-2 {
 	margin-left: 20px;
 	width: 160px;
+	
 }
 
 
-.clockh, .clockc, .clockm, .clocks {
+.clockh {
 	display: flex;
 	color: white;
 	font-size: 8rem;
 	font-family: 'Open Sans';
 	padding: 10px;
-	border-top: 3px solid black;
-	border-bottom: 3px solid black;
-	border-left: 3px solid black;
-	justify-content: center;
+
+
+
 
 
 }
 
-
-.clockh {
+.clockc {
 	color: white;
+	font-size: 8rem;
+	border-left: solid black 3px;
+	font-family: 'Open Sans';
+	padding: 10px;
+
 }
 
 .clockm {
 	color: white;
-	border-right: solid black 3px;
+	border-left: solid black 3px;
+	font-size: 8rem;
+	font-family: 'Open Sans';
+	padding: 10px;
 }
 
 
 .clocks {
 	background-color: white;
 	color: pink;
-	border-right: solid black 3px;
+	font-size: 8rem;
+	font-family: 'Open Sans';
+	padding: 10px;
+	border-top-right-radius: 25%;
 }
 
 
 
+
 @media(max-width: 700px) {
-	.wrapper {
+
+
+
+
+	.interface {
 		display: flex;
 		flex-wrap: wrap;
-		align-content: flex-start;
+		align-content: center;
+		width: 90vw;
 		justify-content: center;
+		margin: 5px;
+		padding-top: 60px;
+		padding-bottom: 80px;
+
 
 	}
 
 
 
-	.clock-container1 {
-		min-width: 80vw;
-		max-width: 80vw;
+	.screen-1 {
+		min-width: 100%;
+		max-width: 100%;
 		margin-right: 0px;
+		border-top-right-radius: 25%;
 
 	}
 
-	.clock-container2 {
+	.screen-1 div {
+		font-size: 4rem;
+	}
+
+
+	.screen-2 {
 		margin-left: 0px;
 		width: 80vw;
 		padding-left: auto;
-		padding-right: auto;
+		padding-right: auto
 
 
 	}
+
+	.screen-2 div {
+		font-size: 3rem;
+	}
+
+
+
 
 
 	.clocks {
 		display: flex;
 		justify-content: center;
+		border-bottom-left-radius: 25%;
+		border-bottom-right-radius: 25%;
+		border-top-right-radius: 0;
 	}
 
 
